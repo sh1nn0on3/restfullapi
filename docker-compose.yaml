@@ -1,0 +1,19 @@
+version: '3.8'
+
+networks:
+  nestjs-networks:
+
+services:
+  rest-full-api:
+    image: postgres:15.0
+    container_name: postgres-database
+    restart: always
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Abc@1234
+      POSTGRES_DB: nestjs
+    networks:
+      - nestjs-networks
+
