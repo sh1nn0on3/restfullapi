@@ -11,6 +11,9 @@ nest g service ...    --no-spec
 ## Install Tech
 npm i 
 prisma 
+argon2
+class-validator 
+class-transformer
 
 
 ## Prisma init
