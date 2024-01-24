@@ -1,0 +1,9 @@
+Database Docker
+docker-compose up -d 
+
+Create Nest
+nest new new_project
+nest g module ...
+nest g controller ...
+nest g service ...
+
