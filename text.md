@@ -1,6 +1,8 @@
 ## Database Docker
 docker-compose up -d 
 docker-compose down -d
+docker-compose up <name_service> --detach
+docker-compose rm <name_service> --stop -force --volume
 
 ## Create Nest
 nest new new_project
@@ -14,6 +16,12 @@ prisma
 argon2
 class-validator 
 class-transformer
+@nestjs/jwt
+passport-jwt
+@types/passport-jwt
+passport
+@nestjs/passport
+pactum
 
 
 ## Prisma init
@@ -28,3 +36,7 @@ psql -U <username>
 \l  : list databases;
 \c  : another database ( use <database> )
 \dt : show data in database
+
+
+## Error
+ForbiddenException

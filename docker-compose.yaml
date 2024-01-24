@@ -16,4 +16,5 @@ services:
       POSTGRES_DB: nestjs
     networks:
       - nestjs-networks
-
+    volumes:
+      - .:/var/lib/postgresql/data
